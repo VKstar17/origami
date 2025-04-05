@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Craft World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>/* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        .sidebar {
+            height: 100vh; /* Full height of the viewport */
+            width: 250px; /* Width of the sidebar */
+            position: fixed; /* Fixed position to keep it in place */
+            top: 0;
+            left: 0;
+            background-color: #333; /* Background color */
+            color: white; /* Text color */
+            overflow-y: auto; /* Enables vertical scrolling */
+            padding: 20px; /* Padding for better spacing */
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        /* Main Content */
+        #main-content {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+        
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+        
+        .main-header {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+        h2 {
+            color:red;
+            top:0;
+            left:0;
+        }
+        h4{
+            color:blueviolet;
+        }
+        .bordered-paragraph {
+            border: 2px solid #333;
+            padding: 40px;
+            margin: 55px 310px;
+        }
+        </style>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <center><h2><u>Animals</u></h2></center>
+        <a href="Dashboard.html">Home</a>
+        <a href="triceratops.html">Origami Triceratops</a>
+        <a href="velicopter.html">Origami Velicopter</a>
+        <a href="sheep.html">Origami Sheep</a>
+        <a href="gorrila.html">Origami Gorilla</a>
+        <a href="dog.html">Origami Dog</a>
+        <a href="chameleon.html">Origami Chameleon</a>
+        <a href="dragon2.html">Origami Flying Dragon</a>
+        <a href="peacock.html">Origami Peacock</a>
+        <a href="bat.html">Origami Bat</a>
+        <a href="frog.html">Origami Frog</a>
+        <a href="horse.html">Origami Horse</a>
+        <a href="bookmark.html">Origami Bookmark</a>
+        <!-- Add more links as needed -->
+    </div>
+
+    <div id="main-content">
+        <span class="openbtn" onclick="openNav()">&#9776; Dashboard</span>
+        <header class="main-header">
+            
+            <h1>Origami Craft World</h1>
+        </header>
+    
+       <center> <div class="bordered-paragraph">
+            <h2>What is Origami Dragon?</h2>
+            <h4>In Japan, origami dragons tend to symbolize wisdom and balance rather than raw power.<br>
+                 The dragon has been a prominent symbol in Japanese culture for hundreds of years.<br>
+                  While Chinese dragons tend to symbolize power and strength, Japanese culture values the 
+                  symbol of the dragon for wisdom and balance.</h4>
+        </div>
+    <hr>
+    <h2>How to make Origami Dragon?</h2>
+    <h4>Watch the below Video.</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vyvZFZQO2YM" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h1><b>Click <u>Dashboard</u> and start your <u>crafting</b></u>.</b></h1>
+    <hr><hr>
+    </center>
+
+    <script>function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("main-content").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main-content").style.marginLeft= "0";
+    }
+    </script>
+</body>
+</html>
